@@ -22,5 +22,13 @@ pipeline {//1
 
             }//4
         }//3
+         stage("post-build"){//3
+            agent any
+            steps{//4
+                sh 'blah blah blah '
+                sh 'echo $PATH'
+                sh 'ls -ls'
+            }//4
+        }//3
     }//2
 }//1
